@@ -1,77 +1,79 @@
-# Contributing to Nexca
+### Contributing to Nexca 🚀
 
-Thank you for contributing to this project! To keep our commit history clean, readable, and automated, we strictly follow the **Conventional Commits** specification.
+Welcome to **Nexca**! We appreciate your interest in contributing to our project. Whether you're new to open-source or a seasoned developer, follow these steps to contribute to Nexca. Let's make something awesome together!
 
-Please read this guide before making any commits or opening a Pull Request.
+### 1. Explore the Repository 🧭
 
-## 📝 Commit Message Format
+Start by visiting the [Nexca repository](https://github.com/homayounmmdy/Nexca3). Look through the README, documentation, and open issues to get familiar with the project. You'll find areas where we need help, such as new features, bug fixes, or improving documentation.
 
-Every commit message must follow this structure:
+### 2. Choose an Issue 🎯
 
-```text
-<type>(<scope>): <subject>
+Once you're familiar with the project, go to the **Issues** tab and pick something you want to work on. Issues are labeled to help you identify the type of contribution:
 
-[optional body]
+- 🐛 Bug fixes
+- 💡 New feature ideas
+- 📄 Documentation improvements
 
-[optional footer(s)]
+Feel free to ask questions on the issue if you need clarification. The maintainers are happy to guide you!
+
+### 3. Fork the Repository 🍴
+
+Next, fork the Nexca repo to your GitHub account:
+
+1. Click the **Fork** button in the top-right corner of the repository.
+2. Clone your fork to your local machine:
+
+   ```bash
+   git clone https://github.com/YOUR-USERNAME/Nexca.git
+   ```
+
+### 4. Create a New Branch 🌿
+
+To start working on the issue, create a new branch in your local repo. This keeps your changes organized and separate from the main branch:
+
+```bash
+git checkout -b issue-name
 ```
 
-### 1. `<type>` (Required)
+Be sure to name your branch something meaningful, like `fix-bug-#123` or `add-feature-xyz`.
 
-The type must be one of the following:
-| Type | Description |
-| :--- | :--- |
-| `feat` | A new feature (triggers a `MINOR` version bump) |
-| `fix` | A bug fix (triggers a `PATCH` version bump) |
-| `docs` | Documentation only changes |
-| `style` | Formatting, missing semi-colons, etc. (no code logic change) |
-| `refactor` | Code change that neither fixes a bug nor adds a feature |
-| `perf` | A code change that improves performance |
-| `test` | Adding or correcting tests |
-| `build` | Changes to build system or external dependencies (e.g., npm, webpack) |
-| `ci` | Changes to CI configuration files and scripts |
-| `chore` | Maintenance tasks, updating dev dependencies, etc. |
-| `revert` | Reverts a previous commit |
+### 5. Make Your Changes 💻
 
-### 2. `<scope>` (Optional but Recommended)
+Now, you're ready to code! Solve the issue, add tests if necessary, and ensure your code follows the project's guidelines.
 
-A short, lowercase phrase indicating what part of the codebase is affected (e.g., `auth`, `api`, `ui`, `database`, `deps`).
+### 6. Commit Your Changes 🔐
 
-### 3. `<subject>` (Required)
+Once you're happy with your work, commit your changes. To keep our commit history clean, readable, and automated, we strictly follow the **Conventional Commits** specification.
 
-- Use the **imperative, present tense**: "add" not "added" or "adds". _(Think: "If applied, this commit will [subject]")_
-- **Do not** capitalize the first letter.
-- **Do not** end with a period (`.`).
-- Keep it concise (under 72 characters).
+👉 **Please read our [Commit Guidelines](./COMMIT_GUIDELINES.md) before committing.**
 
-### 4. `<body>` and `<footer>` (Optional)
+Here is an example of a properly formatted commit:
 
-- **Body**: Explain _what_ and _why_ (not _how_). Wrap at 72 characters.
-- **Footer**: Use for breaking changes (`BREAKING CHANGE: ...`) or to reference issues (`Closes #123`).
-
-## ✅ Good Examples
-
-```text
-feat(auth): add JWT token validation middleware
-
-fix(api): resolve null pointer exception on user fetch
-
-docs(readme): update installation instructions for macOS
-
-refactor(database): migrate user schema to use UUIDs
-
-chore(deps): bump lodash from 4.17.20 to 4.17.21
+```bash
+git add .
+git commit -m "fix(ui): resolve button alignment issue on mobile"
 ```
 
-## ❌ Bad Examples
+### 7. Push to Your Fork 🚢
 
-```text
-# ❌ Missing type and scope, uses past tense, ends with period
-Added the new login feature.
+Push your branch to your GitHub fork:
 
-# ❌ Vague, no context
-fixed bug
-
-# ❌ Capitalized subject, uses "update" instead of imperative "add"
-Feat(UI): Updates the button color
+```bash
+git push origin issue-name
 ```
+
+### 8. Open a Pull Request (PR) 🔄
+
+Go back to the original **Nexca** repository on GitHub and click the **Compare & pull request** button. Fill out the PR description, linking to the issue you're solving, and submit it for review.
+
+### 9. Review and Collaborate 📝
+
+Once your PR is open, the maintainers will review it. They may ask for changes or provide feedback. Don't hesitate to engage in the conversation and make any requested updates.
+
+### 10. Merge and Celebrate 🎉
+
+After approval, your changes will be merged into the main branch. Congrats, you're now a contributor to Nexca! 🎊
+
+Happy coding, and thank you for helping Nexca grow! 😊
+
+For more information, check out our [Nexca repository](https://github.com/homayounmmdy/Nexca3).
