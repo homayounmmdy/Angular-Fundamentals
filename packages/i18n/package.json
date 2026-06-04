@@ -1,5 +1,5 @@
 {
-  "name": "i18n",
+  "name": "@mycms/i18n",
   "version": "1.0.0",
   "description": "",
   "main": "src/index.ts",
