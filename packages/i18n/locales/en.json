@@ -1,6 +1,8 @@
 {
   "hero": {
-    "title": "Build Faster with Our CMS",
-    "description": "The ultimate headless CMS for modern teams."
+    "title": "The Content platform",
+    "everyTeam": "every team",
+    "loves": "loves",
+    "slog": "Experience the power of an open-source CMS built with Next.js. Effortlessly manage content, streamline workflows, and connect with your audience. Perfect for agencies, bloggers, and creators."
   }
 }
