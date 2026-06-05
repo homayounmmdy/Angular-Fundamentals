@@ -5,6 +5,7 @@ import { motion, Variants } from "framer-motion";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import React from "react";
+import CTABtn from "./CTABtn";
 
 const Hero: React.FC = () => {
   const contentVariants: Variants = {
@@ -115,12 +116,12 @@ const Hero: React.FC = () => {
             >
               {t("slog")}
             </motion.p>
-            {/* <motion.div
+            <motion.div
                      variants={contentVariants}
                      className="mt-8 flex items-center justify-center gap-3"
                   >
-                     <CTABtn href="/admin">Admin Demo</CTABtn>
-                  </motion.div> */}
+                     <CTABtn  href="/admin">Admin Demo</CTABtn>
+                  </motion.div>
           </motion.div>
 
           {/* Hero Image */}
