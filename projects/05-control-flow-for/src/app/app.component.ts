@@ -6,31 +6,35 @@ import { Component } from '@angular/core';
   template: `
     <section class="container">
       <!-- This article element represents and entire listing -->
-      <article class="listing">
-        <div class="image-parent">
-          <img class="product-image" src="https://placehold.co/100x100" />
-        </div>
-        <section class="details">
-          <p class="title"><!-- car make and model--></p>
-          <hr />
-          <p class="detail">
-            <span>Year</span>
-            <span><!-- year --></span>
-          </p>
-          <div class="detail">
-            <span>Transmission</span>
-            <span><!-- transmission --></span>
+      @for (item of carList; track item.model) {
+        <article class="listing">
+          <div class="image-parent">
+            <img class="product-image" src="https://placehold.co/100x100" />
           </div>
-          <p class="detail">
-            <span>Mileage</span>
-            <span><!-- miles --></span>
-          </p>
-          <p class="detail">
-            <span>Price</span>
-            <span><!-- price --></span>
-          </p>
-        </section>
-      </article>
+          <section class="details">
+            <p class="title">{{item.make}} {{item.model}}</p>
+            <hr />
+            <p class="detail">
+              <span>Year</span>
+              <span>{{item.year}}</span>
+            </p>
+            <div class="detail">
+              <span>Transmission</span>
+              <span>{{item.transmission}}</span>
+            </div>
+            <p class="detail">
+              <span>Mileage</span>
+              <span>{{item.miles}}</span>
+            </p>
+            <p class="detail">
+              <span>Price</span>
+              <span>{{item.price}}</span>
+            </p>
+          </section>
+        </article>
+      } @empty {
+        <p>No listing available</p>
+      }
     </section>
   `,
   styleUrl: 'app.component.css',
