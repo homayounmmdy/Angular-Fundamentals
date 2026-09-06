@@ -3,7 +3,7 @@
 In this example your task is to update this application code to enable it to run.
 
 Did you know you can see these instructions formatted by pressing
-
+  
 - Mac - CMD + SHIFT + V?
 - Win/Lin - CTRL + SHIFT + V
 
