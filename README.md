@@ -1,159 +1,60 @@
-# Turborepo starter
+# Angular Fundamentals Lessons
 
-This Turborepo starter is maintained by the Turborepo core team.
+## What to install
 
-## Using this example
+- [Latest version of Node or Active LTS](https://nodejs.org/en/download/)
+- [Angular CLI](https://angular.dev/tools/cli/setup-local#install-the-angular-cli)
+- [Visual Studio Code](https://code.visualstudio.com/download)
+- [Angular Language Service Plugin for VS Code](https://marketplace.visualstudio.com/items?itemName=Angular.ng-template)
 
-Run the following command:
+## How to run these lesson
 
-```sh
-npx create-turbo@latest
+- Clone this repository to your local computer.
+
+```bash
+git clone git@github.com:marktechson/angular-fundamentals-lessons
 ```
 
-## What's inside?
+- From the command line, in the root directory (angular-fundamentals-lessons) run the following command:
 
-This Turborepo includes the following packages/apps:
-
-### Apps and Packages
-
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
-
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
-
-### Utilities
-
-This Turborepo has some additional tools already setup for you:
-
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
-
-### Build
-
-To build all apps and packages, run the following command:
-
-With [global `turbo`](https://turborepo.dev/docs/getting-started/installation#global-installation) installed (recommended):
-
-```sh
-cd my-turborepo
-turbo build
+```bash
+ng serve <lesson>
 ```
 
-Without global `turbo`, use your package manager:
+In order to run the first lesson, for example:
 
-```sh
-cd my-turborepo
-npx turbo build
-npm dlx turbo build
-npm exec turbo build
+```bash
+ng serve 01-hello-angular
 ```
 
-You can build a specific package by using a [filter](https://turborepo.dev/docs/crafting-your-repository/running-tasks#using-filters):
+Then, open your browser to `http://localhost:4200` and you'll find the lesson.
 
-With [global `turbo`](https://turborepo.dev/docs/getting-started/installation#global-installation) installed:
+## Solutions
 
-```sh
-turbo build --filter=docs
+- All of the solutions are on the `solutions branch. You can access them by using the following command:
+
+```bash
+git checkout solutions
 ```
 
-Without global `turbo`:
+## Lesson Links
 
-```sh
-npx turbo build --filter=docs
-npm exec turbo build --filter=docs
-npm exec turbo build --filter=docs
-```
+- [Lesson 01 - 01-hello-angular](projects/01-hello-angular)
+- [Lesson 02 - 02-displaying-dynamic-data](projects/02-displaying-dynamic-data)
+- [Lesson 03 - 03-component-composition](projects/03-component-composition)
+- [Lesson 04 - 04-control-flow-if](projects/04-control-flow-if)
+- [Lesson 05 - 05-control-flow-for](projects/05-control-flow-for)
+- [Lesson 06 - 06-input-output](projects/06-input-output)
+- [Lesson 07 - 07-routing-basics](projects/07-routing-basics)
+- [Lesson 08 - 08-routing-recap](projects/08-routing-recap)
+- [Lesson 09 - 09-template-driven-forms](projects/09-template-driven-forms)
+- [Lesson 10 - 10-reactive-forms](projects/10-reactive-forms)
+- [Lesson 11 - 11-dependency-injection](projects/11-dependency-injection)
+- [Lesson 12 - 12-angular-signals](projects/12-angular-signals)
+- [Lesson 13 - 13-deferrable-views](projects/13-deferrable-views)
 
-### Develop
+## Helpful links
 
-To develop all apps and packages, run the following command:
-
-With [global `turbo`](https://turborepo.dev/docs/getting-started/installation#global-installation) installed (recommended):
-
-```sh
-cd my-turborepo
-turbo dev
-```
-
-Without global `turbo`, use your package manager:
-
-```sh
-cd my-turborepo
-npx turbo dev
-npm exec turbo dev
-npm exec turbo dev
-```
-
-You can develop a specific package by using a [filter](https://turborepo.dev/docs/crafting-your-repository/running-tasks#using-filters):
-
-With [global `turbo`](https://turborepo.dev/docs/getting-started/installation#global-installation) installed:
-
-```sh
-turbo dev --filter=web
-```
-
-Without global `turbo`:
-
-```sh
-npx turbo dev --filter=web
-npm exec turbo dev --filter=web
-npm exec turbo dev --filter=web
-```
-
-### Remote Caching
-
-> [!TIP]
-> Vercel Remote Cache is free for all plans. Get started today at [vercel.com](https://vercel.com/signup?utm_source=remote-cache-sdk&utm_campaign=free_remote_cache).
-
-Turborepo can use a technique known as [Remote Caching](https://turborepo.dev/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
-
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup?utm_source=turborepo-examples), then enter the following commands:
-
-With [global `turbo`](https://turborepo.dev/docs/getting-started/installation#global-installation) installed (recommended):
-
-```sh
-cd my-turborepo
-turbo login
-```
-
-Without global `turbo`, use your package manager:
-
-```sh
-cd my-turborepo
-npx turbo login
-npm exec turbo login
-npm exec turbo login
-```
-
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
-
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
-
-With [global `turbo`](https://turborepo.dev/docs/getting-started/installation#global-installation) installed:
-
-```sh
-turbo link
-```
-
-Without global `turbo`:
-
-```sh
-npx turbo link
-npm exec turbo link
-npm exec turbo link
-```
-
-## Useful Links
-
-Learn more about the power of Turborepo:
-
-- [Tasks](https://turborepo.dev/docs/crafting-your-repository/running-tasks)
-- [Caching](https://turborepo.dev/docs/crafting-your-repository/caching)
-- [Remote Caching](https://turborepo.dev/docs/core-concepts/remote-caching)
-- [Filtering](https://turborepo.dev/docs/crafting-your-repository/running-tasks#using-filters)
-- [Configuration Options](https://turborepo.dev/docs/reference/configuration)
-- [CLI Usage](https://turborepo.dev/docs/reference/command-line-reference)
+- [Angular.dev playground](https://angular.dev/playground)
+- [Course slides (goo.gle/fem-slides)](https://goo.gle/fem-slides)
+- [Project Code(goo.gle/fem-code)](https://goo.gle/fem-code)
