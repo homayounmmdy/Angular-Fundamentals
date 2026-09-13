@@ -1,60 +1,36 @@
-# Angular Fundamentals Lessons
+# Angular Fundamentals
 
-## What to install
+<img width="1464" height="760" alt="Screenshot 2026-09-13 210022" src="https://github.com/user-attachments/assets/129203ac-2cb8-461e-a15e-c48eb58bb517" />
 
-- [Latest version of Node or Active LTS](https://nodejs.org/en/download/)
-- [Angular CLI](https://angular.dev/tools/cli/setup-local#install-the-angular-cli)
-- [Visual Studio Code](https://code.visualstudio.com/download)
-- [Angular Language Service Plugin for VS Code](https://marketplace.visualstudio.com/items?itemName=Angular.ng-template)
+This repository documents my learnings from **Angular Fundamentals** on Frontend Masters, taught by **Mark (Techson) Thompson** (Google).
 
-## How to run these lesson
+📅 **Course Timeline**
 
-- Clone this repository to your local computer.
+- Started: September 6, 2026
+- Completed: September 12, 2026
 
-```bash
-git clone git@github.com:marktechson/angular-fundamentals-lessons
-```
+## About the Course
 
-- From the command line, in the root directory (angular-fundamentals-lessons) run the following command:
+Discover the power of Angular's latest features straight from the Angular team at Google! Learn to use the new control flow syntax in your component templates and performance features like signals and deferrable views. Create components dynamically, use state management with routing, and wire up reactive forms for data handling. Equip yourself with modern Angular foundations and see what the Angular Renaissance is all about!
 
-```bash
-ng serve <lesson>
-```
+Key topics include:
 
-In order to run the first lesson, for example:
+- 🏛️ **Angular Essentials**: Getting started with the Angular playground and local setup, touring the project structure (`angular.json`, `package.json`, `main.ts`), creating components with TypeScript/HTML/CSS, and using decorators to add behavior to classes.
+- 🧱 **Component Composition**: Displaying dynamic values with string interpolation, building applications by combining components like blocks, and understanding CSS selectors and naming conventions.
+- 🔀 **Templating & Control Flow**: Using the new control flow syntax with conditionals (`*ngIf`, `else`, `switch`) and loops, plus `track by` for optimized rendering performance.
+- 🔗 **Properties, Events & Outputs**: Property binding, event binding, passing data into components with inputs, and emitting data out with outputs using event emitters and typed events.
+- 🗺️ **Navigation & Routing**: Setting up routes in `app-routes.ts`, using `router-outlet`, creating clickable links with `router-link`, handling dynamic route parameters, and generating links programmatically with `ngFor`.
+- 📝 **Forms**: Comparing template-driven forms (with "Banana in a Box" two-way binding) and reactive forms (form groups, form controls, form submission handling).
+- 💉 **Dependency Injection**: Making services injectable with `@Injectable`, providing at root or component level, and injecting services with the `inject` function.
+- ⚡ **Signals & Views**: New reactivity primitives (`signal`, `computed`, `effect`), change detection improvements, and deferrable views for lazy loading components with triggers like idle, scroll, or custom conditions.
+- 🎨 **Wrapping Up**: Angular CLI capabilities, Angular Material and the Component Development Kit (CDK) for accessible, customizable components, plus additional Angular.dev resources.
 
-```bash
-ng serve 01-hello-angular
-```
+Throughout the course, I built a practical application while exploring components, routing, forms, dependency injection, and modern Angular optimizations.
 
-Then, open your browser to `http://localhost:4200` and you'll find the lesson.
+## 🚀 Why I Took This Course
 
-## Solutions
+I took this course because my primary tool is React, and I wanted to gain knowledge about other frameworks. Angular is one of the most popular frameworks, and I plan to take more related Angular courses to broaden my skills for the future. This is just the beginning.
 
-- All of the solutions are on the `solutions branch. You can access them by using the following command:
+## 📢 Access Note
 
-```bash
-git checkout solutions
-```
-
-## Lesson Links
-
-- [Lesson 01 - 01-hello-angular](projects/01-hello-angular)
-- [Lesson 02 - 02-displaying-dynamic-data](projects/02-displaying-dynamic-data)
-- [Lesson 03 - 03-component-composition](projects/03-component-composition)
-- [Lesson 04 - 04-control-flow-if](projects/04-control-flow-if)
-- [Lesson 05 - 05-control-flow-for](projects/05-control-flow-for)
-- [Lesson 06 - 06-input-output](projects/06-input-output)
-- [Lesson 07 - 07-routing-basics](projects/07-routing-basics)
-- [Lesson 08 - 08-routing-recap](projects/08-routing-recap)
-- [Lesson 09 - 09-template-driven-forms](projects/09-template-driven-forms)
-- [Lesson 10 - 10-reactive-forms](projects/10-reactive-forms)
-- [Lesson 11 - 11-dependency-injection](projects/11-dependency-injection)
-- [Lesson 12 - 12-angular-signals](projects/12-angular-signals)
-- [Lesson 13 - 13-deferrable-views](projects/13-deferrable-views)
-
-## Helpful links
-
-- [Angular.dev playground](https://angular.dev/playground)
-- [Course slides (goo.gle/fem-slides)](https://goo.gle/fem-slides)
-- [Project Code(goo.gle/fem-code)](https://goo.gle/fem-code)
+Due to regional restrictions in Iran, I accessed this course through alternative means. While I don't have an official certificate, I completed the lessons, followed the demonstrations, and documented my implementations and takeaways in this repository.
